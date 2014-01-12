@@ -1,0 +1,56 @@
+/*
+	GLOBAL
+*/
+html, body { width: 100%; height: 100%; background-color: #C5E1C6; min-height: 700px; }
+
+/*@font-face { font-family: 'GM'; src: url('../font/gotham.medium.ttf'); }
+@font-face { font-family: 'HN'; src: url('../font/helvetica.neue.ttf'); }
+@font-face { font-family: 'HNB'; src: url('../font/helvetica.neue.bold.ttf'); }*/
+
+* { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+#wrapper {  width: 100%; height: 580px; }
+
+img { display: block; }
+
+#twitter { display: block; width: 42px; height: 27px; background: url("../img/twitter_sprite.png") top left no-repeat; background-position: 0px 0px; position: absolute; top: 46px; left: 53px; }
+#twitter:hover { background-position: -42px 0px; }
+#facebook { display: block; width: 16px; height: 28px; background: url("../img/facebook_sprite.png") top left no-repeat; background-position: 0px 0px; position: absolute; top: 46px; left: 116px; }
+#facebook:hover { background-position: -16px 0px; }
+
+#logo { display: block; width: 528px; height: 429px; position: absolute; top: 139px; }
+#about { display: none; width: 882px; height: 365px; position: absolute; top: 183px; }
+#instructions { display: none; width: 968px; height: 162px; position: absolute; top: 350px; }
+
+.leftTopCap { width: 54px; height: 51px; position: absolute; top: 0px; left: 0px; background: url("../img/leftTopCap.png") top left no-repeat; }
+
+.leftLine { width: 0px; height: 0px; border: 1px solid #ED6352; position: absolute; top: 58px; left: 11px; }
+.rightLine { width: 0px; height: 0px; border: 1px solid #ED6352; position: absolute; top: 58px; right: 11px; }
+
+.topLine { width: 0px; height: 0px; border: 1px solid #ED6352; position: absolute; top: 8px; left: 64px; }
+.bottomLine { width: 0px; height: 0px; border: 1px solid #ED6352; position: absolute; bottom: 8px; left: 64px; }
+
+.leftBottomCap { width: 55px; height: 51px; position: absolute; bottom: 0px; left: 0px; background: url("../img/leftBottomCap.png") top left no-repeat; }
+.rightTopCap { width: 55px; height: 51px; position: absolute; top: 0px; right: 0px; background: url("../img/rightTopCap.png") top left no-repeat; }
+.rightBottomCap { width: 51px; height: 52px; position: absolute; bottom: 0px; right: 0px; background: url("../img/rightBottomCap.png") top left no-repeat; }
+
+#nav-wrapper { width: 100%; margin-bottom: 26px; text-align: center; }
+#nav { margin: 0 auto; width: 856px; }
+
+#nav .button { float: left; margin-right: 16px; display: block; background-position: 0px 0px; }
+#nav .last { margin: 0px; }
+
+#nav .website { width: 141px; height: 65px; background: url("../img/dali_website_sprite.png") top left no-repeat; }
+#nav .website:hover, #nav .website.active { background-position: -141px 0px; }
+
+#nav .instructions { width: 252px; height: 65px; background: url("../img/instructions_sprite.png") top left no-repeat; }
+#nav .instructions:hover, #nav .instructions.active { background-position: -252px 0px; }
+
+#nav .download { width: 265px; height: 65px; background: url("../img/download_sprite.png") top left no-repeat; }
+#nav .download:hover, #nav .download.active { background-position: -265px 0px; }
+
+#nav .about { width: 150px; height: 65px; background: url("../img/about_sprite.png") top left no-repeat; }
+#nav .about:hover, #nav .about.active { background-position: -150px 0px; }
+
+#footer { text-align: center; }
+#footer a { color: #f2634e; text-decoration: underline; font: bold 13px Helvetica; margin-right: 40px; }
+#footer a.last { margin: 0px; }
