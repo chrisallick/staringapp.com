@@ -1,3 +1,9 @@
+$(window).load(function{
+	$("body").animate({
+		opacity: 1
+	});
+});
+
 $(document).ready(function() {
 	$(".leftLine").css({
 		height: $(window).height() - (58*2)
@@ -64,9 +70,5 @@ $(document).ready(function() {
 			$("#instructions").fadeIn();
 			$("#about").fadeOut();
 		}
-	});
-
-	$("body").animate({
-		opacity: 1
 	});
 });
