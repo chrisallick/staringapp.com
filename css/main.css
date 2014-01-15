@@ -1,11 +1,7 @@
 /*
 	GLOBAL
 */
-html, body { width: 100%; height: 100%; background-color: #C5E1C6; min-height: 700px; }
-
-/*@font-face { font-family: 'GM'; src: url('../font/gotham.medium.ttf'); }
-@font-face { font-family: 'HN'; src: url('../font/helvetica.neue.ttf'); }
-@font-face { font-family: 'HNB'; src: url('../font/helvetica.neue.bold.ttf'); }*/
+html, body { width: 100%; height: 100%; background-color: #C6E4C7; }
 
 * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
 #wrapper {  width: 100%; height: 580px; }
@@ -17,9 +13,15 @@ img { display: block; }
 #facebook { display: block; width: 16px; height: 28px; background: url("../img/facebook_sprite.png") top left no-repeat; background-position: 0px 0px; position: absolute; top: 46px; left: 116px; }
 #facebook:hover { background-position: -16px 0px; }
 
-#logo { display: block; width: 528px; height: 429px; position: absolute; top: 139px; }
-#about { display: none; width: 882px; height: 365px; position: absolute; top: 183px; }
+#logo { display: block; width: 528px; height: 429px; position: absolute; top: 119px; }
+#about { display: none; width: 882px; height: 365px; position: absolute; top: 120px; background: url("../img/about_text.png") top left no-repeat; }
 #instructions { display: none; width: 968px; height: 162px; position: absolute; top: 350px; }
+#instructions #gif-wrapper { width: 968px; height: 160px; position: relative; }
+#instructions #gif-wrapper .bg { position: absolute; bottom: 0px; left: 0px; }
+#instructions #gif-wrapper .one { position: absolute; top: 0px; left: 33px; }
+#instructions #gif-wrapper .two { position: absolute; top: 0px; left: 412px; }
+#instructions #gif-wrapper .three { position: absolute; top: 0px; left: 620px; }
+#instructions #gif-wrapper .four { position: absolute; top: 0px; left: 843px; }
 
 .leftTopCap { width: 54px; height: 51px; position: absolute; top: 0px; left: 0px; background: url("../img/leftTopCap.png") top left no-repeat; }
 
@@ -54,3 +56,17 @@ img { display: block; }
 #footer { text-align: center; }
 #footer a { color: #f2634e; text-decoration: underline; font: bold 13px Helvetica; margin-right: 40px; }
 #footer a.last { margin: 0px; }
+
+@media only screen and ( max-width:640px ) {
+	#wrapper { height: 651px; }
+	
+	#logo { width: 510px; height: 416px; top: 145px; }
+	
+	#about { display: none; width: 502px; height: 448px; position: absolute; top: 120px; background: url("../img/about_mobile.png") top left no-repeat; background-size: 100% 100%; }
+
+	#nav-wrapper { margin-bottom: 16px;}
+	#nav .button { margin-bottom: 16px; }
+	#nav { width: 438px; }
+	
+	#footer { min-width: 640px; }
+}

@@ -46,7 +46,7 @@ $(document).ready(function() {
 	});
 
 	$(".button").click(function(e) {
-		if( $(this).hasClass("website") ){
+		if( $(this).hasClass("website") || $(this).hasClass("download") ){
 			return true;
 		}
 

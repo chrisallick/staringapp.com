@@ -21,15 +21,28 @@
 		<script src="./js/main.js"></script>
 	</head>
 	<body>
-		<a id="twitter" href="#"></a>
-		<a id="facebook" href="#"></a>
-		
+		<a id="twitter" href="javascript:(function(){window.twttr=window.twttr||{};var D=550,A=450,C=screen.height,B=screen.width,H=Math.round((B/2)-(D/2)),G=0,F=document,E;if(C>A){G=Math.round((C/2)-(A/2))}window.twttr.shareWin=window.open('https://twitter.com/intent/tweet?text=The Dalí Museum Staring Contest staringapp.com','','left='+H+',top='+G+',width='+D+',height='+A+',personalbar=0,toolbar=0,scrollbars=1,resizable=1');E=F.createElement('script');E.src='http://platform.twitter.com/widgets.js';F.getElementsByTagName('head')[0].appendChild(E)}());"></a>
+		<a id="facebook" href="#" onclick="
+    		window.open(
+      			'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('http://staringapp.com'), 
+      			'facebook-share-dialog', 
+      			'width=626,height=436'
+      		);
+    		return false;"></a>
 		<div id="wrapper">
 			<img id="logo" class="center" src="./img/logo.png" />
-			<img id="about" class="center" src="./img/about_text.png" />
-			<img id="instructions" class="center" src="./img/instructions.png" />
+			<div id="about" class="center"></div>
+			<div id="instructions" class="center">
+				<div id="gif-wrapper" class="clear">
+					<img class="bg" src="./img/instructions/bg.png" />
+					<img class="one" width="210" src="./img/instructions/one.gif" />
+					<img class="two" width="55" src="./img/instructions/two.gif" />
+					<img class="three" width="90" src="./img/instructions/three.gif" />
+					<img class="four" width="82" src="./img/instructions/four.gif" />
+				</div>
+			</div>
 		</div>
-		
+
 		<div class="leftLine"></div>
 		<div class="rightLine"></div>
 		<div class="topLine"></div>
@@ -44,13 +57,13 @@
 			<div id="nav" class="clear">
 				<a class="button website" target="_blank" href="http://thedali.org/home.php"></a>
 				<a class="button instructions" href="#"></a>
-				<a class="button download" href="#"></a>
+				<a class="button download" target="_blank" href="https://itunes.apple.com/us/app/the-dali-staring-contest/id795417235?ls=1&mt=8"></a>
 				<a class="button about last" href="#"></a>
 			</div>
 		</div>
 		<div id="footer">
-			<a href="#">Terms and Conditions</a>
-			<a class="last" href="#">Legal</a>
+			<a target="_blank" href="/termsandconditions.html">Terms and Conditions</a>
+			<a target="_blank" class="last" href="/legal.html">Legal</a>
 		</div>
 	</body>
 </html
