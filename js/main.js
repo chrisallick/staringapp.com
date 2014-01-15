@@ -65,4 +65,8 @@ $(document).ready(function() {
 			$("#about").fadeOut();
 		}
 	});
+
+	$("body").animate({
+		opacity: 1
+	});
 });
