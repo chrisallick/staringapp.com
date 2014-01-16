@@ -1,10 +1,28 @@
-$(window).load(function(){
-	$("body").animate({
-		opacity: 1
+center_small = function() {
+	$(".leftLine").css({
+		height: $(document).height() - (64*2)
 	});
-});
 
-$(document).ready(function() {
+	$(".rightLine").css({
+		height: $(document).height() - (64*2)
+	});
+
+	$(".topLine").css({
+		width: $(window).width() - (64*2)
+	});
+
+	$(".bottomLine").css({
+		width: $(window).width() - (64*2)
+	});
+
+	$(".center").each(function(value,index){
+		$(this).css({
+			left: $(document).width()/2 - $(this).width()/2	
+		});
+	});
+}
+
+center_desktop = function() {
 	$(".leftLine").css({
 		height: $(window).height() - (64*2)
 	});
@@ -26,42 +44,27 @@ $(document).ready(function() {
 			left: $(document).width()/2 - $(this).width()/2	
 		});
 	});
+}
 
+$(window).load(function(){
+	if( $(window).height() > 580 ) {
+		center_desktop();
+	} else {
+		center_small();
+	}
+
+	$("body").animate({
+		opacity: 1
+	});
+});
+
+$(document).ready(function() {
 	$(window).resize(function() {
 		if( $(window).height() > 580 ) {
-			$(".leftLine").css({
-				height: $(window).height() - (64*2)
-			});
-
-			$(".rightLine").css({
-				height: $(window).height() - (64*2)
-			});
-
-			$(".topLine").css({
-				width: $(window).width() - (64*2)
-			});
-
-			$(".bottomLine").css({
-				width: $(window).width() - (64*2)
-			});	
+			center_desktop();
 		} else {
-			$(".leftLine").css({
-				height: $(document).height() - (64*2)
-			});
-
-			$(".rightLine").css({
-				height: $(document).height() - (64*2)
-			});
-
-			$(".topLine").css({
-				width: $(window).width() - (64*2)
-			});
-
-			$(".bottomLine").css({
-				width: $(window).width() - (64*2)
-			});	
+			center_small();
 		}
-
 
 		$(".center").each(function(value,index){
 			$(this).css({
