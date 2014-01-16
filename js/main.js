@@ -6,11 +6,11 @@ $(window).load(function(){
 
 $(document).ready(function() {
 	$(".leftLine").css({
-		height: $(window).height() - (58*2)
+		height: $(window).height() - (64*2)
 	});
 
 	$(".rightLine").css({
-		height: $(window).height() - (58*2)
+		height: $(window).height() - (64*2)
 	});
 
 	$(".topLine").css({
@@ -27,22 +27,41 @@ $(document).ready(function() {
 		});
 	});
 
-	$(window).resize(function(){
-		$(".leftLine").css({
-			height: $(window).height() - (58*2)
-		});
+	$(window).resize(function() {
+		if( $(window).height() > 580 ) {
+			$(".leftLine").css({
+				height: $(window).height() - (64*2)
+			});
 
-		$(".rightLine").css({
-			height: $(window).height() - (58*2)
-		});
+			$(".rightLine").css({
+				height: $(window).height() - (64*2)
+			});
 
-		$(".topLine").css({
-			width: $(window).width() - (64*2)
-		});
+			$(".topLine").css({
+				width: $(window).width() - (64*2)
+			});
 
-		$(".bottomLine").css({
-			width: $(window).width() - (64*2)
-		});
+			$(".bottomLine").css({
+				width: $(window).width() - (64*2)
+			});	
+		} else {
+			$(".leftLine").css({
+				height: $(document).height() - (64*2)
+			});
+
+			$(".rightLine").css({
+				height: $(document).height() - (64*2)
+			});
+
+			$(".topLine").css({
+				width: $(window).width() - (64*2)
+			});
+
+			$(".bottomLine").css({
+				width: $(window).width() - (64*2)
+			});	
+		}
+
 
 		$(".center").each(function(value,index){
 			$(this).css({
@@ -52,14 +71,14 @@ $(document).ready(function() {
 	});
 
 	$(".button").click(function(e) {
+		$(".button").removeClass("active");
+		$(this).addClass("active");
+
 		if( $(this).hasClass("website") || $(this).hasClass("download") ){
 			return true;
 		}
 
 		e.preventDefault();
-
-		$(".button").removeClass("active");
-		$(this).addClass("active");
 
 		if( $(this).hasClass("about") ) {
 			$("#logo").fadeOut();
