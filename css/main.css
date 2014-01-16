@@ -14,9 +14,9 @@ img { display: block; }
 #facebook { display: block; width: 12px; height: 24px; background: url("../img/facebook_sprite.png") top left no-repeat; background-position: 0px 0px; position: absolute; top: 46px; left: 100px; background-size: 200% 100%; }
 #facebook:hover { background-position: -12px 0px; }
 
-#logo { display: block; height: 47%; /*height: 386px;*/ position: absolute; top: 119px; }
+#logo { display: block; height: 47%; /*height: 386px;*/ position: absolute; top: 139px; }
 #about { display: none; width: 906px; height: 366px; position: absolute; top: 120px; background: url("../img/about_text.png") top left no-repeat; background-size: 100% 100%; }
-#instructions { display: none; width: 1066px; height: 162px; position: absolute; top: 350px; }
+#instructions { display: none; width: 1066px; height: 164px; position: absolute; top: 350px; }
 #instructions #gif-wrapper { width: 968px; height: 160px; position: relative; }
 #instructions #gif-wrapper .bg { position: absolute; bottom: 0px; left: 0px; }
 #instructions #gif-wrapper .one { position: absolute; top: 0px; left: 33px; }
@@ -35,7 +35,7 @@ img { display: block; }
 .rightTopCap { width: 56px; height: 56px; position: absolute; top: 0px; right: 0px; background: url("../img/rightTopCap.png") top left no-repeat; background-size: 100% 100%; }
 .rightBottomCap { width: 56px; height: 56px; position: absolute; bottom: 0px; right: 0px; background: url("../img/rightBottomCap.png") top left no-repeat; background-size: 100% 100%; }
 
-#nav-wrapper { width: 100%; margin-bottom: 26px; text-align: center; position: absolute; bottom: 60px; }
+#nav-wrapper { width: 100%; margin-bottom: 26px; text-align: center; position: absolute; bottom: 30px; }
 #nav { margin: 0 auto; width: 761px; }
 
 #nav .button { float: left; margin-right: 16px; height: 58px; display: block; background-position: 0px 0px; }
@@ -54,7 +54,7 @@ img { display: block; }
 #nav .about:hover, #nav .about.active { background-position: -132px 0px; }
 
 #footer { text-align: center; position: absolute; bottom: 20px; width: 100%; }
-#footer a { color: #f2634e; text-decoration: underline; font: bold 13px Helvetica; margin-right: 40px; }
+#footer a { color: #f2634e; font: bold 12px Helvetica; margin-right: 40px; opacity: .6; }
 #footer a.last { margin: 0px; }
 
 @media only screen and ( max-width:640px ) {
