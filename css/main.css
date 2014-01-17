@@ -24,16 +24,16 @@ img { display: block; }
 #instructions #gif-wrapper .three { position: absolute; top: 9px; left: 752px; }
 #instructions #gif-wrapper .four { position: absolute; top: 12px; left: 962px; }
 
-.topLine { width: 0px; height: 0px; border: 1px solid #ED6352; position: absolute; top: 9px; left: 63px; }
+.topLine { width: 0px; height: 0px; border: 1px solid #ED6352; position: absolute; top: 11px; left: 63px; }
 .leftLine { width: 0px; height: 0px; border: 1px solid #ED6352; position: absolute; top: 63px; left: 10px; }
 
 .rightLine { width: 0px; height: 0px; border: 1px solid #ED6352; position: absolute; top: 64px; right: 11px; }
-.bottomLine { width: 0px; height: 0px; border: 1px solid #ED6352; position: absolute; bottom: 8px; left: 64px; }
+.bottomLine { width: 0px; height: 0px; border: 1px solid #ED6352; position: absolute; bottom: 10px; left: 64px; }
 
-.leftTopCap { width: 56px; height: 56px; position: absolute; top: 0px; left: 0px; background: url("../img/leftTopCap.png") top left no-repeat; background-size: 100% 100%; }
-.leftBottomCap { width: 56px; height: 56px; position: absolute; bottom: 0px; left: 0px; background: url("../img/leftBottomCap.png") top left no-repeat; background-size: 100% 100%; }
-.rightTopCap { width: 56px; height: 56px; position: absolute; top: 0px; right: 0px; background: url("../img/rightTopCap.png") top left no-repeat; background-size: 100% 100%; }
-.rightBottomCap { width: 56px; height: 56px; position: absolute; bottom: 0px; right: 0px; background: url("../img/rightBottomCap.png") top left no-repeat; background-size: 100% 100%; }
+.leftTopCap { width: 65px; height: 65px; position: absolute; top: 0px; left: 0px; background: url("../img/leftTopCap.png") top left no-repeat; background-size: 100% 100%; }
+.leftBottomCap { width: 65px; height: 65px; position: absolute; bottom: 0px; left: 0px; background: url("../img/leftBottomCap.png") top left no-repeat; background-size: 100% 100%; }
+.rightTopCap { width: 65px; height: 65px; position: absolute; top: 0px; right: 0px; background: url("../img/rightTopCap.png") top left no-repeat; background-size: 100% 100%; }
+.rightBottomCap { width: 65px; height: 65px; position: absolute; bottom: 0px; right: 0px; background: url("../img/rightBottomCap.png") top left no-repeat; background-size: 100% 100%; }
 
 #nav-wrapper { width: 100%; margin-bottom: 26px; text-align: center; position: absolute; bottom: 30px; }
 #nav { margin: 0 auto; width: 761px; }
