@@ -5,18 +5,19 @@ html, body { width: 100%; height: 100%; background-color: #C6E4C7; }
 body { opacity: 0; }
 
 * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
-#wrapper {  width: 100%; height: 100%; min-height: 580px; position: relative; }
+#wrapper {  width: 100%; height: 100%; min-height: 731px; position: relative; }
 
 img { display: block; }
 
-#twitter { display: block; width: 28px; height: 24px; background: url("../img/twitter_sprite.png") top left no-repeat; background-position: 0px 0px; position: absolute; top: 46px; left: 53px; background-size: 200% 100%; }
+#twitter { display: block; width: 28px; height: 24px; background: url("../img/twitter_sprite.png") top left no-repeat; background-position: 0px 0px; position: absolute; top: 46px; left: 73px; background-size: 200% 100%; }
 #twitter:hover { background-position: -28px 0px; }
-#facebook { display: block; width: 12px; height: 24px; background: url("../img/facebook_sprite.png") top left no-repeat; background-position: 0px 0px; position: absolute; top: 46px; left: 100px; background-size: 200% 100%; }
+#facebook { display: block; width: 12px; height: 24px; background: url("../img/facebook_sprite.png") top left no-repeat; background-position: 0px 0px; position: absolute; top: 46px; left: 120px; background-size: 200% 100%; }
 #facebook:hover { background-position: -12px 0px; }
 
 #logo { display: block; height: 47%; /*height: 386px;*/ position: absolute; top: 139px; }
 #about { display: none; width: 906px; height: 366px; position: absolute; top: 120px; background: url("../img/about_text.png") top left no-repeat; background-size: 100% 100%; }
-#instructions { display: none; width: 1066px; height: 164px; position: absolute; top: 350px; }
+iframe { position: absolute; width: 500px; height: 281px; top: 78px; display: none; }
+#instructions { display: none; width: 1066px; height: 164px; position: absolute; top: 435px; }
 #instructions #gif-wrapper { width: 968px; height: 160px; position: relative; }
 #instructions #gif-wrapper .bg { position: absolute; bottom: 0px; left: 0px; }
 #instructions #gif-wrapper .one { position: absolute; top: 0px; left: 33px; }
@@ -58,6 +59,7 @@ img { display: block; }
 #footer a.last { margin: 0px; }
 
 @media only screen and ( max-width:640px ) {
+	iframe { display: none; }
 	#twitter, #facebook { display: none; }
 
 	#wrapper { min-height: 800px; }
