@@ -95,11 +95,18 @@ $(document).ready(function() {
 	});
 
 	$("#mobile_instructions").click(function() {
-		if( $(".active", this).next().length == 0 ) {
+		if( $(".active", this).next().next().length == 0 ) {
 			$(".active", this).removeClass("active");
 			$(".one", this).addClass("active");
 		} else {
-			$(".active", this).removeClass("active").next().addClass("active");	
+			$(".active", this).removeClass("active").next().next().addClass("active");	
+		}
+
+		if( $(".active-text", this).next().next().length == 0 ) {
+			$(".active-text", this).removeClass("active-text");
+			$(".one-text", this).addClass("active-text");
+		} else {
+			$(".active-text", this).removeClass("active-text").next().next().addClass("active-text");
 		}
 	})
 });

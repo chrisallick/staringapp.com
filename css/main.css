@@ -77,10 +77,18 @@ img { display: block; }
 	}
 	#instructions #mobile_instructions img { position: absolute; top: 0px; left: 0px; display: none; }
 	#instructions #mobile_instructions img.active { display: block; }
+	#instructions #mobile_instructions img.active-text { display: block; }
 	#instructions #mobile_instructions .one { width: 499px; top: 60px; }
+	#instructions #mobile_instructions .one-text { width: 360px; top: auto; bottom: 0px; left: 60px; }
+	
 	#instructions #mobile_instructions .two { width: 500px; top: 90px; }
+	#instructions #mobile_instructions .two-text { width: 430px; top: auto; bottom: 0px; left: 30px; }
+	
 	#instructions #mobile_instructions .three { width: 146px; top: 70px; left: 170px; }
+	#instructions #mobile_instructions .three-text { width: 218px; top: auto; bottom: 0px; left: 139px; }
+	
 	#instructions #mobile_instructions .four { width: 190px; top: 80px; left: 142px; }
+	#instructions #mobile_instructions .four-text { width: 179px; top: auto; bottom: 0px; left: 157px; }
 
 	#wrapper { min-height: 100%; }
 	
