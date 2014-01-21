@@ -86,13 +86,20 @@ $(document).ready(function() {
 		if( $(this).hasClass("about") ) {
 			$("#logo").fadeOut();
 			$("#instructions").fadeOut();
-			$("iframe").fadeOut();
 			$("#about").fadeIn();
 		} else if( $(this).hasClass("instructions") ) {
 			$("#logo").fadeOut();
 			$("#instructions").fadeIn();
-			$("iframe").fadeIn();
 			$("#about").fadeOut();
 		}
 	});
+
+	$("#mobile_instructions").click(function() {
+		if( $(".active", this).next().length == 0 ) {
+			$(".active", this).removeClass("active");
+			$(".one", this).addClass("active");
+		} else {
+			$(".active", this).removeClass("active").next().addClass("active");	
+		}
+	})
 });
