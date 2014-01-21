@@ -117,32 +117,32 @@ $(document).ready(function() {
 	// });
 
     hammertime.on("swipeleft", function(ev) {
-		if( $(".active", this).next().next().length == 0 ) {
-			$(".active", this).removeClass("active");
-			$(".one", this).addClass("active");
+		if( $(".instructions .active").next().length == 0 ) {
+			$(".instructions .active").removeClass("active");
+			$(".instructions .instruction").first().addClass("active");
 		} else {
-			$(".active", this).removeClass("active").next().next().addClass("active");	
+			$(".instructions .active").removeClass("active").next().addClass("active");
 		}
 
-		if( $(".active-text", this).next().next().length == 0 ) {
-			$(".active-text", this).removeClass("active-text");
-			$(".one-text", this).addClass("active-text");
+		if( $(".dots .active").next().length == 0 ) {
+			$(".dots .active").removeClass("active");
+			$(".dots .dot").first().addClass("active");
 		} else {
-			$(".active-text", this).removeClass("active-text").next().next().addClass("active-text");
+			$(".dots .active").removeClass("active").next().addClass("active");
 		}
     }).on("swiperight", function(ev) {
-		if( $(".active", this).prev().prev().length == 0 ) {
-			$(".active", this).removeClass("active");
-			$(".four", this).addClass("active");
+		if( $(".instructions .active").prev().length == 0 ) {
+			$(".instructions .active").removeClass("active");
+			$(".instructions .instruction").last().addClass("active");
 		} else {
-			$(".active", this).removeClass("active").prev().prev().addClass("active");	
+			$(".instructions .active").removeClass("active").prev().addClass("active");
 		}
 
-		if( $(".active-text", this).prev().prev().length == 0 ) {
-			$(".active-text", this).removeClass("active-text");
-			$(".four-text", this).addClass("active-text");
+		if( $(".dots .active").prev().length == 0 ) {
+			$(".dots .active").removeClass("active");
+			$(".dots .dot").last().addClass("active");
 		} else {
-			$(".active-text", this).removeClass("active-text").prev().prev().addClass("active-text");
+			$(".dots .active").removeClass("active").prev().addClass("active");
 		}
     });
 });
