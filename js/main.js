@@ -94,7 +94,29 @@ $(document).ready(function() {
 		}
 	});
 
-	$("#mobile_instructions").click(function() {
+	// $("#mobile_instructions").click(function() {
+	// 	if( $(".active", this).next().next().length == 0 ) {
+	// 		$(".active", this).removeClass("active");
+	// 		$(".one", this).addClass("active");
+	// 	} else {
+	// 		$(".active", this).removeClass("active").next().next().addClass("active");	
+	// 	}
+
+	// 	if( $(".active-text", this).next().next().length == 0 ) {
+	// 		$(".active-text", this).removeClass("active-text");
+	// 		$(".one-text", this).addClass("active-text");
+	// 	} else {
+	// 		$(".active-text", this).removeClass("active-text").next().next().addClass("active-text");
+	// 	}
+	// });
+
+    var hammertime = $("#mobile_instructions").hammer();
+
+	// Hammer($("#mobile_instructions")[0]).on("swipeleft", function() {
+	//     alert('you swiped left!');
+	// });
+
+    hammertime.on("swipeleft", function(ev) {
 		if( $(".active", this).next().next().length == 0 ) {
 			$(".active", this).removeClass("active");
 			$(".one", this).addClass("active");
@@ -108,5 +130,19 @@ $(document).ready(function() {
 		} else {
 			$(".active-text", this).removeClass("active-text").next().next().addClass("active-text");
 		}
-	})
+    }).on("swiperight", function(ev) {
+		if( $(".active", this).prev().prev().length == 0 ) {
+			$(".active", this).removeClass("active");
+			$(".four", this).addClass("active");
+		} else {
+			$(".active", this).removeClass("active").prev().prev().addClass("active");	
+		}
+
+		if( $(".active-text", this).prev().prev().length == 0 ) {
+			$(".active-text", this).removeClass("active-text");
+			$(".four-text", this).addClass("active-text");
+		} else {
+			$(".active-text", this).removeClass("active-text").prev().prev().addClass("active-text");
+		}
+    });
 });
