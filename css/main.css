@@ -5,7 +5,7 @@ html, body { width: 100%; height: 100%; background-color: #C6E4C7; }
 body { opacity: 0; }
 
 * { -webkit-tap-highlight-color: rgba(0,0,0,0); }
-#wrapper {  width: 100%; height: 100%; min-height: 531px; position: relative; }
+#wrapper { width: 100%; height: 100%; min-height: 531px; position: relative; }
 
 img { display: block; }
 
@@ -64,17 +64,12 @@ img { display: block; }
 @media only screen and ( max-width: 640px ) {
 	#twitter, #facebook { display: none; }
 	
+	#wrapper { width: 640px; overflow: hidden; }
+
 	#instructions #gif-wrapper { display: none; }
 	#instructions iframe { display: none; }
-	#instructions { width: 554px; height: 500px; top: 0px; left: 0px; }
-	#instructions #mobile_instructions {
-		display: block;
-		width: 100%;
-		height: 90%;
-		position: absolute;
-		top: 40px;
-		left: 0px;
-	}
+	#instructions { width: 554px; height: 550px; top: 0px; left: 0px; }
+	#instructions #mobile_instructions { display: block; width: 100%; height: 90%; position: absolute; top: 80px; left: 0px; }
 
 	#instructions #mobile_instructions .playvideo { display: block; width: 285px; height: 65px; margin: 0 auto; }
 
@@ -84,19 +79,19 @@ img { display: block; }
 	
 	#instructions #mobile_instructions .gif, #instructions #mobile_instructions .text { position: absolute; }
 
-	#instructions #mobile_instructions .one .gif { width: 332px; top: 130px; left: 80px; }
-	#instructions #mobile_instructions .one .text { width: 466px; top: 368px; left: 24px; }
+	#instructions #mobile_instructions .one .gif { width: 332px; top: 140px; left: 80px; }
+	#instructions #mobile_instructions .one .text { width: 466px; top: 378px; left: 24px; }
 	
 	#instructions #mobile_instructions .two .gif { width: 357px; top: 120px; left: 62px; }
-	#instructions #mobile_instructions .two .text { width: 554px; top: 368px; left: 0px; }
+	#instructions #mobile_instructions .two .text { width: 554px; top: 378px; left: 0px; }
 	
 	#instructions #mobile_instructions .three .gif { width: 104px; top: 116px; left: 222px; }
-	#instructions #mobile_instructions .three .text { width: 304px; top: 368px; left: 121px; }
+	#instructions #mobile_instructions .three .text { width: 304px; top: 378px; left: 121px; }
 	
-	#instructions #mobile_instructions .four .gif { width: 147px; top: 120px; left: 200px; }
-	#instructions #mobile_instructions .four .text { width: 259px; top: 368px; left: 141px; }
+	#instructions #mobile_instructions .four .gif { width: 147px; top: 20px; left: 200px; }
+	#instructions #mobile_instructions .four .text { width: 259px; top: 378px; left: 141px; }
 
-	#instructions #mobile_instructions .dots { position: absolute; bottom: 0px; left: 144px; }
+	#instructions #mobile_instructions .dots { position: absolute; bottom: 10px; left: 144px; }
 	#instructions #mobile_instructions .dots .dot { float: left; background: #ED6352; width: 25px; height: 25px; border-radius: 50%; opacity: .4; margin-right: 52px; }
 	#instructions #mobile_instructions .dots .last { margin-right: 0px; }
 	#instructions #mobile_instructions .dots .active { opacity: 1; }
@@ -105,9 +100,9 @@ img { display: block; }
 	
 	#logo { height: 47%; top: 145px; }
 	
-	#about { width: 502px; height: 448px; top: 120px; background: url("../img/about_mobile.png") top left no-repeat; }
+	#about { width: 540px; height: 500px; top: 120px; background: url("../img/about_mobile_long.png") top left no-repeat; }
 
-	#nav-wrapper { margin-bottom: 16px;}
+	#nav-wrapper { margin-bottom: 0px; -webkit-transform: scale(1.4); bottom: 80px; }
 	#nav .button { margin-bottom: 16px; }
 	#nav { width: 382px; }
 	
@@ -117,5 +112,25 @@ img { display: block; }
 @media only screen and ( max-width: 640px ) and ( max-height: 745px ) {
 	#logo { height: 44%; top: 100px; }
 
-	#about { width: 502px; height: 448px; position: absolute; top: 70px; }
+	#about { position: absolute; top: 30px; }
+
+	#nav-wrapper { margin-bottom: 0px; -webkit-transform: scale(1.1); bottom: 40px; }
+
+	#instructions { height: 500px; }
+
+	#instructions #mobile_instructions { top: 40px; }
+
+	#instructions #mobile_instructions .one .gif { top: 110px; }
+	#instructions #mobile_instructions .one .text { top: 358px; }
+	
+	#instructions #mobile_instructions .two .gif { top: 100px; }
+	#instructions #mobile_instructions .two .text { top: 358px; }
+	
+	#instructions #mobile_instructions .three .gif { top: 96px; }
+	#instructions #mobile_instructions .three .text { top: 358px; }
+	
+	#instructions #mobile_instructions .four .gif { top: 10px; }
+	#instructions #mobile_instructions .four .text { top: 358px;}
+
+	#instructions #mobile_instructions .dots { bottom: 0px; }
 }
